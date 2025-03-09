@@ -1,0 +1,114 @@
+/* ---------------PORTFOLIO----------------- */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 10px; 
+}
+#portfolio h1{
+    margin:10px;
+    font-size: 3.7rem;
+    text-shadow: 3px 3px 5px rgba(231, 87, 236, 0.589);
+    animation: slideOut 5s ease-out infinite ;
+}
+@keyframes slideOut {
+    0% {
+        transform: translateX(-100vw);
+        opacity: 0;
+    }
+    25% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(100vw);
+        opacity: 0;
+    }
+}
+.card { 
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.479);
+    overflow: hidden;
+    width: calc(70% - 0px);
+    margin: 20px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.card img {
+    position: relative;
+    z-index: 1; 
+    margin-top: 27px;
+    width: 92%;
+    height: auto;
+    margin-left: 1px;
+}
+.icon-github {
+    position: absolute;
+    top: 3px;  
+    right: 4px; 
+    width: 60px;  
+    height: 60px;
+    z-index: 2; 
+    background-color: rgb(255, 255, 255); 
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+.icon-github img {
+    width: 100%;
+    height: 100%;
+    margin: -1px -10px;
+    object-fit: contain;
+}
+.card a {
+    color:#333333;
+    text-decoration: none;
+    font-size: 20px;
+}
+.card h2{
+    margin:12px;
+}
+.card p {
+    display: none;
+}
+
+.card:hover {
+    transform: translateX(-10px);
+    transform: translateY(-10px);
+}
+
+/* ---------------MEDIA QUERIES----------------- */
+@media (min-width: 550px) and (max-width: 767px) {
+    .card-container {
+        justify-content: space-around;
+    }
+    .card p {
+        display: none;
+    }
+    #portfolio p{
+        margin:0 50px;
+    }
+}
+@media (min-width: 768px) and (max-width: 2002px) {
+    .card-container {
+        justify-content: space-around;
+    }
+    .card {
+        width: calc(65% - 0px);
+    }
+    .card p{
+        display: block;
+        text-align: center;
+        margin: 0 30px;
+    }
+    #portfolio p{
+        margin:2% 20%;
+    }
+}

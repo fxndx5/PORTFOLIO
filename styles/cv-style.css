@@ -1,0 +1,160 @@
+/*----------------CURRICULUM----------------------*/
+#cv{
+    margin: 100px 20px; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;   
+}	
+#cv h1 {
+    font-size: 60px;
+    text-shadow: 3px 3px 6px rgba(231, 87, 236, 0.589);
+    -webkit-background-clip: text;background-clip: text;
+    /* color: transparent; */
+    animation: slideIn 2s ease-out forwards ;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(-50px);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+#curriculum p{
+    font-size: 1em;
+}
+.curriculum-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-left: 10px solid #f1a548;
+    position: relative;
+    padding: 25px 10px 30px;
+    opacity: 1;
+    transform: translateY(50px);
+    transition: opacity 1s ease-in, transform 1s ease-in;
+}
+.p-large{
+    display: none;
+}
+.years{
+    padding:20px;
+    font-weight: bold;
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.experience, .experience1, .experience2, .experience3{
+    padding: 15px;
+    background-color: lightblue;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.61);
+    transition: background-color 0.3s ease border-color 0.3s ease; 
+    flex:1;
+}
+.curriculum-container h2, h4{
+    text-align: center;
+}
+
+.experience:hover {
+    background-color: #caffbf ;
+    border: 3px solid #a3fc91;
+    
+}
+.experience1:hover{
+    background-color: #ffc6ff;
+    border: 3px solid rgb(252, 139, 252 , 0.2);
+}
+.experience2:hover {
+    background-color: #fdffb6;
+    border: 3px solid #eef35e;
+}
+.experience3:hover {
+    background-color: #ffd6a5;
+    border: 3px solid #f1a548;
+}
+.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+@media (min-width: 550px) and (max-width: 767px) {
+    #cv{
+        background-color:#ffffff;
+        width: 100%;
+        height: auto;
+        padding-bottom: 10%;  
+        margin: 0;
+    }
+    .curriculum-container {
+        flex-direction: row;
+        width: 90%;
+    }
+    .curriculum-container h2, h4{
+        text-align: center;
+    }
+    .curriculum-container p{
+        font-size: 0.8em;
+    }
+    .years{
+        padding:20px 10px;
+    }
+    .experience, .experience1, .experience2, .experience3{
+        height: 30%;
+    }
+    .experience p, .experience1 p, .experience2 p, .experience3 p{
+        display:none;
+    }
+    .experience {
+        text-align: left;
+        padding: 20px;
+    }
+
+    .timeline {
+        width: 5px;
+    }
+
+}
+@media (min-width: 768px) and (max-width: 2004px) {
+    #cv{
+        margin:0;
+        width: 100%;
+        height: auto;
+        padding-bottom: 10%;
+        background-color:#ffffff;
+    }
+    .curriculum-container {
+        flex-direction: row;
+        width: 90%;
+        height: auto;
+    }
+    .curriculum-container h2, h4{
+        text-align: center;
+    }
+    .curriculum-container p{
+        font-size: 0.8em;
+    }
+    .years{
+        padding:65px 10px;
+    }
+    .p-large{
+        display: block;
+        font-size: 8rem;
+    }
+    .experience {
+        text-align: left;
+        padding: 20px;
+    }
+
+    .timeline {
+        width: 5px;
+    }
+}

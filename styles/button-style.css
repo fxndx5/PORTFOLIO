@@ -1,0 +1,55 @@
+/* -------------BUTTON------------------ */
+.botones button{
+    margin-right: 17px;
+    color: white;
+}
+.boton-cv{
+    font-family: monospace; font-weight: bold;
+    background-color: #f0c7d7;
+    border-color:#ffc6ff ;
+    border-radius: 5px;
+    padding: 7px;
+    margin-right:30px 20px 10px 20px;
+    transition: all 0.3s ease;
+}
+.boton-cv:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px #bc5090;
+}
+.boton-contacta{
+    font-family: monospace; font-weight: bold;
+    background-color: #aeeaf0;
+    border-color: #9bf6ff;
+    border-radius: 5px;
+    padding: 7px;
+    margin-right:20px 20px 10px 20px;
+    transition: all 0.3s ease;
+}
+.boton-contacta.boton-contacta:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px #43b0f1;
+}
+.boton-darkmode{
+    display: block;
+    cursor: pointer;
+    background-color: #ffa600;
+    border-color: #ffa600 ;
+    border-radius: 10px;
+    padding: 5px 5px 5px;
+    color: white;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+/*------------RESPONSIVE----------------- */
+@media (min-width: 768px) {
+    .boton-darkmode{
+        margin-left: 8px;
+        width: auto;
+        height: 45px;
+    }
+}

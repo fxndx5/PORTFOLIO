@@ -1,0 +1,136 @@
+.body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(45deg,var(--grisTransparente),var(--azulClaro),var(--azulOscuro));
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+
+#contacto h1{
+    color: var(--verde);
+    width: 100%;
+    padding: 4vh 0px 0 0;
+    text-align: center;
+    margin: auto;
+    font-size: 2rem;
+}
+
+#contacto h3{
+    color: white;
+    width:  60vw;
+    padding: 0 0 35px 0;
+    text-align: center;
+    margin: auto;
+}
+
+#contacto{
+    width: 100%;
+    justify-items: center;
+
+    background-image: url("../resources/banner.jpg");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat:no-repeat;
+}
+
+#contactUs{
+    background-color: var(--grisTransparente);
+    box-shadow: 0 0 20px var(--azulOscuro);
+    color:black;
+    font-weight: bold;
+    border-radius: 20px;
+    
+    width: 60vw;
+
+    max-width: 600px;
+    display: grid;
+
+    grid-template-columns: 1fr 3fr;
+    margin: 10px 20px 10% 20px;
+    padding: 20px;
+
+    align-items:flex-start;
+    
+}
+
+
+#contactUs label{
+    text-align: end;
+    font-size: 0.95rem;
+    margin: 10px 20px 10px 0px;
+}
+
+#contactUs input[type="text"], 
+    #contactUs input[type="phone"], 
+        #contactUs input[type="email"], 
+            #contactUs textarea{
+    margin: 5px 0px 5px 0px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+}
+
+.botonera{
+    display: flex;
+    justify-items: space-around;
+}
+
+/* Validación del formulario */
+
+.escritura{
+    color: var(--azul);
+    text-align: justify;
+}
+.error { 
+    color: red; 
+    font-size: 0.9em; 
+    
+} 
+.success { 
+    color: var(--verde); 
+}
+#resultado {
+    text-align: center;
+} 
+/* ----------------------TWITTER------------------------ */
+.twitter-container {
+    width: 90%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.719);
+    padding: 20px;
+    margin-bottom: 8%;
+    margin-top: 5%;
+    box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.171);
+    text-align: center;
+    max-height: 800px;
+    overflow: auto;
+}
+.twitter-container a{
+    height: 600px;
+    display: block;
+    overflow: hidden;
+
+}
+
+h2 {
+    color: var(--azulOscuro);
+    font-size: 35px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+
+/* Responsive */
+@media (min-width: 300) and (max-width: 768px) {
+    .twitter-container {
+        width: 90%;
+        padding: 15px;
+        max-height: 400px;
+    }
+
+}

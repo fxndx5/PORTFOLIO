@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/menu-style.css">
+    <link rel="stylesheet" href="styles/banner-style.css">
+    <link rel="stylesheet" href="styles/button-style.css">
+    <link rel="stylesheet" href="styles/cv-style.css">
+    <link rel="stylesheet" href="styles/portfolio-style.css">
+    <link rel="stylesheet" href="styles/contacta-style.css">
+    <link rel="stylesheet" href="styles/footer-style.css">
+    <link rel="stylesheet" href="styles/testimonials-style.css">
+    <link rel="stylesheet" href="styles/aboutme-skills-style.css">
+    <link rel="shortcut icon" href="sources/short-icon.PNG">
+    <title>FerWeb</title>
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="burger-menu" onclick="toggleMenu()">
+            <div style="background-color: #bc5090"></div>
+            <div style="background-color: #ffa600"></div>
+            <div style="background-color: #6894f3 "></div>
+        </div>
+        <div class="menu" id="menu">
+            <a class="menu-inicio" href="#banner">Inicio</a>
+            <a class="menu-yo" href="#about-me">Acerca de mi</a>
+            <a class="menu-skills" href="#skills">Skills</a>
+            <a class="menu-cv"  href="#cv">Educación</a>
+            <a class="menu-port" href="#portfolio">Portfolio</a>
+            <a class="menu-contact" href="#contacto">Contact</a>
+            <button class="boton-darkmode" onclick="toggleDarkMode()">Sunset mode</button>
+            <div class="menu-social">
+                <a href="https://github.com/fxndx5" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="www.linkedin.com/in/fernanda-gonz%C3%A1lez-a84415334" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.threads.net/@feergalv" target="_blank" ><i class="fab fa-instagram"></i></a>
+                <a href="https://discord.com/channels/@fxndx5" target="_blank" ><i class="fab fa-discord"></i></a>
+            </div>
+            <div class="botones">
+                <button class="boton-cv" onclick="window.open('docs/Fernanda_CV.pdf', '_blank')">Descargar CV</button>
+                <button class="boton-contacta" onclick="window.open('#contact', '_blank')">Contáctame</button>
+            </div>
+            <div id="google_translate_element"></div>
+        </div>
+    </nav>
+    <!----------------PALETA COLORES: https://colorkit.co/palettes/-->
+    <section id ="banner" class="banner">
+        <div class="text">
+            <h1>Fernanda González</h1>
+            <h3>Me entusiasman los desafíos creativos y la búsqueda de soluciones innovadoras.</h3>
+            <p>Soy una desarrolladora web apasionada por crear experiencias digitales únicas.</p>
+        </div>
+        <div class="photo">
+            <img id="banner-img" src="sources/emoji2.PNG" alt="Fernanda González">
+        </div>
+        <div class="botones">
+            <button class="boton-cv" onclick="location.href='docs/Fernanda_CV.pdf'" target="blank">Descargar CV</button>
+            <button class="boton-contacta" onclick="location.href='#contact'">Contáctame</button>
+        </div>
+        <div>
+            <img src="sources/chevron-down.png" alt="chevron-down" class="chevron-down">
+        </div>
+    </section>
+
+    <section id="about-me">
+        <h3 class="style-h3">INTRODUCCIÓN</h3>
+        <div class="img-aboutme">
+            <div class="img-wrapper">
+                <img class="default-img" src="sources/me2.png" alt="Imagen Normal">
+                <img class="hover-img" src="sources/me1.png" alt="Imagen Hover">
+            </div>
+        </div>
+        <h1 class="h1-aboutme">Acerca de mí</h1>
+        <p>Soy estudiante de informatica y programadora multiplataforma. Soy una persona
+            muy trabajadora y motivada que disfruta de los desafios y de alcanzar metas y
+            objetivos personales. Puedo trabajar muy bien en equipo y de manera individual.
+            Actualmente, soy desarrollador full-stack realizando proyectos en Java, JavaScript,
+            HTML5 , CSS3, MySQL...
+        </p>
+        <div class="menu-social-aboutme">
+            <a href="https://github.com/fxndx5" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="www.linkedin.com/in/fernanda-gonz%C3%A1lez-a84415334" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.threads.net/@feergalv" target="_blank" ><i class="fab fa-instagram"></i></a>
+            <a href="https://discord.com/channels/@fxndx5" target="_blank" ><i class="fab fa-discord"></i></a>
+        </div>
+        <div class="esta-soy-yo">
+            <div class="intro">
+              <h2>Esta soy yo</h2>
+              <p>Aquí te cuento más cositas sobre mí...</p>
+            </div>
+            <div class="circulos">
+                <div class="circulo" id="circulo0"></div>
+                <div class="circulo" id="circulo1">
+                    <h3>HOBBIES</h3>
+                    <p class="parrafo-hobbie">Me encanta la fotografía, capturar momentos y paisajes es algo que me llena de satisfacción.</p>
+                </div>
+                <div class="circulo" id="circulo2" >
+                    <h3>DEPORTE</h3>
+                    <p class="parrafo-hobbie">Me apasiona ir al gimnasio y los ejercicios de fuerza, concentrar mi mente entre cuerpo y alma.</p>
+                </div>
+                <div class="circulo" id="circulo3">
+                    <h3>OTRO...</h3>
+                    <p class="parrafo-hobbie">He estudiado Diseño de interiores y edificación...Por lo que el arte y lo urban, ¡Me apasiona!</p>
+                </div>
+                <div class="circulo" id="circulo4"></div>
+                <div class="circulo" id="circulo5"></div>
+                <div class="circulo" id="circulo6"></div>
+                <div class="circulo" id="circulo7"></div>
+                <div class="circulo" id="circulo8"></div>
+            </div>
+        </div>
+          
+        
+    </section>
+    <section id="skills"class="skills2">
+            <h1>Habilidades Técnicas</h1>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Desarrollo de Plataformas </h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <img src="https://img.icons8.com/?size=100&id=46605&format=png&color=000000" alt="HTML">
+                            <span>HTML</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://img.icons8.com/?size=100&id=107497&format=png&color=000000" alt="CSS">
+                            <span>CSS</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://img.icons8.com/?size=100&id=1ZSHk8m9bk4p&format=png&color=000000" alt="JavaScript">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://img.icons8.com/?size=100&id=46565&format=png&color=000000" alt="GitHub">
+                            <span>GitHub</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend y Database en Web</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <img src="sources/java-icon.png" alt="Java">
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://img.icons8.com/?size=100&id=iFPHC1KfnoxC&format=png&color=000000" alt="Visual Studio Code">
+                            <span>Visual Studio Code</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://img.icons8.com/?size=100&id=12Xk5enJGiNJ&format=png&color=000000" alt="Apache NetBeans">
+                            <span>Apache NetBeans</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://img.icons8.com/?size=100&id=tqCLzhXvksKu&format=png&color=000000" alt="Notepad++">
+                            <span>Notepad++</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Diseño de UX en Websites</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <img src="https://img.icons8.com/?size=100&id=42874&format=png&color=000000" alt="Adobe Photoshop">
+                            <span>Adobe Photoshop</span>
+                        </div>
+                        <!-- <div class="skill-item">
+                            <img src="https://shela.site/images/icons/Figma.svg" alt="Figma">
+                            <span>Figma</span>
+                        </div> -->
+                        <div class="skill-item">
+                            <img src="https://img.icons8.com/?size=100&id=95004&format=png&color=000000" alt="Snapseed">
+                            <span>Snapseed</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://img.icons8.com/?size=100&id=46341&format=png&color=000000" alt="Adobe Illustrator">
+                            <span>Adobe Illustrator</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://img.icons8.com/?size=100&id=46340&format=png&color=000000" alt="Adobe Indesign">
+                            <span>Adobe Indesign</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Producción en movimientos</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <img src="https://img.icons8.com/?size=100&id=86672&format=png&color=000000" alt="Adobe AfterEffects">
+                            <span>Adobe AfterEffects</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://img.icons8.com/?size=100&id=111595&format=png&color=000000" alt="Adobe Premiere Pro">
+                            <span>Adobe Premiere Pro</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://img.icons8.com/?size=100&id=BL1SoBysjEA8&format=png&color=000000" alt="Adobe Audition">
+                            <span>Adobe Audition</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://img.icons8.com/?size=100&id=tz6WyVvuN851&format=png&color=000000" alt="ArchiCAD">
+                            <span>ArchiCAD</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <section id="cv">
+        <h1>Educación</h1>
+        <div id="curriculum" class="curriculum-container">
+            <div class="years2">
+                <p>2024 - Now</p>
+            </div>
+            <div class="experience2" >
+                <h2>UDEMY ACADEMY</h2>
+                <h4>Java y Redes</h4>
+                <p class="p-large">Actualmente estoy estudiando en Udemy Academy, realizando un curso de Java para mejorar mis habilidades 
+                    en programación orientada a objetos. También estoy aprendiendo sobre redes y networking con Packet Tracer, 
+                    profundizando en la configuración y simulación de infraestructuras de red. Me interesa combinar desarrollo y 
+                    redes para tener un enfoque más completo en tecnología.
+                </p>
+            </div>
+        </div>
+        <div id="curriculum" class="curriculum-container">
+            <div class="years">
+                <p>2024 - Now</p>
+            </div>
+            <div class="experience">
+                <h2>IES El Lago</h2>
+                <h4>Desarrollo de Apliaciones Multiplataforma</h4>
+                <p class="p-large">Estudio Desarrollo de Aplicaciones Web, especializándome en la creación de sitios y plataformas interactivas. 
+                    Me apasiona el diseño y la funcionalidad, buscando siempre mejorar la experiencia del usuario. 
+                    Disfruto transformar ideas en soluciones digitales eficientes y atractivas.
+                </p>
+            </div>
+        </div>
+        <div id="curriculum" class="curriculum-container">
+            <div class="years1">
+                <p>2018 - 2022</p>
+            </div>
+            <div class="experience1" >
+                <h2>Universidad Complutense de Madrid</h2>
+                <h4>Ingeniería de Edificación y Diseño de Interiores</h4>
+                <p class="p-large">Estudié Ingeniería de Edificación, aprendiendo sobre construcción y estructura, 
+                    pero mi pasión por la estética me llevó a hacer un Máster en Diseño de Interiores. 
+                    Ahora combino ambos conocimientos para crear espacios funcionales, seguros y visualmente armoniosos.
+                </p>
+            </div>
+        </div>
+        
+        <div id="curriculum" class="curriculum-container">
+            <div class="years3">
+                <p>2016 - 2018</p>
+            </div>
+            <div class="experience3" >
+                <h2>Esneca Business School</h2>
+                <h4>Diseño y Creación de Espacios</h4>
+                <p class="p-large">Estudié Diseño y Creación de Espacios en Esneca Business School, donde aprendí a utilizar herramientas como SketchUp, 
+                    3D Studio Max, Sweet Home y Adobe para el diseño de interiores y modelado 3D. Me enfoqué en la planificación y 
+                    visualización de espacios, combinando creatividad y tecnología para crear entornos funcionales y estéticamente
+                     atractivos.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h3 class="style-h3">MI TRABAJO</h3>
+        <h1>Proyectos</h1>
+        <p>
+            Trabajar con una variedad de lenguajes y tecnologías me permite contribuir a proyectos tanto personales 
+            como profesionales.Puede encontrar más información en mi cuenta de GitHub. Todos estos proyectos son 
+            sitios web completamente funcionales.
+        </p>
+        <div class="card-container">
+            <div class="card">
+                <a href="WEBS/P2_LM_WEB_RaulLopez_GuillermoSantos_FernandaGonzalez_ErikaLorenzo/Index.html" target="_blank"><img src="sources/marvel1.png" alt="Project 4"></a>
+                <div class="icon-github" title="GitHub">
+                    <a href="https://github.com/fxndx5"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/GitHub_Mark.png" alt="GitHub"></a>
+                </div>
+                <a href="WEBS/P2_LM_WEB_RaulLopez_GuillermoSantos_FernandaGonzalez_ErikaLorenzo/Index.html" target="_blank"><h2 class="title-project">Mendex <br>MarvelWorld</h2></a>
+                <div class="arrow" onclick="toggleText()">&#x25BC;</div>
+                <p>Mi primer proyecto web fue una plataforma para vender NFTs de Marvel. Usé HTML y CSS, aunque no era responsive. El diseño resaltaba los personajes 
+                    de Marvel y hacía la navegación atractiva con animaciones sutiles y colores llamativos.
+                </p>
+                <div class="tecnicas">
+                    <div class="tag">#CSS</div>
+                    <div class="tag">#HTML5</div>
+                </div>
+            </div>
+            <div class="card">
+                <a href="WEBS/BUILDCODE/INDEX.html" target="_blank"><img src="sources/buildcode1.png" alt="Project 4"></a>
+                <div class="icon-github" title="GitHub">
+                    <a href="https://github.com/fxndx5"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/GitHub_Mark.png" alt="GitHub"></a>
+                </div>
+                <a href="WEBS/BUILDCODE/INDEX.html" target="_blank"><h2 class="title-project">BUILDCODE</h2></a>
+                <div class="arrow" onclick="toggleText()">&#x25BC;</div>
+                <p>Mi primer proyecto web fue una plataforma para vender NFTs de Marvel. Usé HTML y CSS, aunque no era responsive. El diseño resaltaba los personajes 
+                    de Marvel y hacía la navegación atractiva con animaciones sutiles y colores llamativos.
+                </p>
+                <div class="tecnicas">
+                    <div class="tag">#JavaScript</div>
+                    <div class="tag">#CSS</div>
+                    <div class="tag">#HTML5</div>
+                    <div class="tag">#ResponsiveWeb</div>
+                </div>
+            </div>
+            <div class="card">
+                <a href="https://example.com/project4" target="_blank"><img src="https://shela.site/images/projectcovers/brekacover.webp" alt="Project 4"></a>
+                <div class="icon-github" title="GitHub">
+                    <a href="https://github.com/fxndx5"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/GitHub_Mark.png" alt="GitHub"></a>
+                </div>
+                <a href="https://example.com/project3" target="_blank"><h2 class="title-project">Project 3</h2></a>
+                <div class="arrow" onclick="toggleText()">&#x25BC;</div>
+                <p>He creado una web de servicios TI automatizados, con un diseño responsive utilizando HTML y CSS. Esta web ofrece soluciones eficientes para la
+                    gestión y automatización de sistemas TI, mejorando la productividad y reduciendo los costos. Su diseño adaptable garantiza una experiencia 
+                    óptima en cualquier dispositivo. Descubre la innovación en cada clic.
+               </p>
+               <div class="tecnicas">
+                <div class="tag">#JavaScript</div>
+                <div class="tag">#CSS</div>
+                <div class="tag">#HTML5</div>
+                <div class="tag">#ResponsiveWeb</div>
+            </div>
+            </div>
+            <div class="card">
+                <a href="https://example.com/project4" target="_blank"><img src="https://shela.site/images/projectcovers/brekacover.webp" alt="Project 4"></a>
+                <div class="icon-github" title="GitHub">   
+                    <a href="https://github.com/fxndx5"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/GitHub_Mark.png" alt="GitHub"></a>
+                </div>
+                <a href="https://example.com/project4" target="_blank"><h2 class="title-project">Project 4</h2></a>
+                <div class="arrow" onclick="toggleText()">&#x25BC;</div>
+                <p>He creado una web de servicios TI automatizados, con un diseño responsive utilizando HTML y CSS. Esta web ofrece soluciones eficientes para la
+                    gestión y automatización de sistemas TI, mejorando la productividad y reduciendo los costos. Su diseño adaptable garantiza una experiencia 
+                    óptima en cualquier dispositivo. Descubre la innovación en cada clic.
+               </p>
+               <div class="tecnicas">
+                <div class="tag">#JavaScript</div>
+                <div class="tag">#CSS</div>
+                <div class="tag">#HTML5</div>
+                <div class="tag">#ResponsiveWeb</div>
+            </div>
+            
+        </div>
+
+    </section>
+    <section class="testimonials">
+        <h2 class="testimonials-title">Testimonios</h2>
+        <div class="arrows">
+            <img src="https://cdn-icons-png.flaticon.com/512/271/271220.png" alt="Left Arrow" class="arrow left">
+            <img src="https://cdn-icons-png.flaticon.com/512/271/271228.png" alt="Right Arrow" class="arrow right">
+        </div>
+        <div class="card-test">
+            <img src="sources/test3.png" alt="Speech Icon" class="speech-icon">
+            <p class="testimonial-text">
+                "Shela's Waterfall approach to social media management was exceptional. Her meticulous planning and instinct for impromptu content grew our followers from 0 to nearly 2,000 in just 8 weeks. Shela's organizational skills and foresight were key to our rapid growth."
+            </p>
+            <img src="sources/black-line.png" alt="Line" class="line">
+            <p class="testimonial-author">Morgan Franz</p>
+            <p class="testimonial-role">Social Media Manager</p>
+        </div>
+        <div class="card-test">
+            <img src="sources/test2.png" alt="Speech Icon" class="speech-icon">
+            <p class="testimonial-text">
+                "La gestión en cascada de nuestra campaña de marca y marketing por parte de Shela permitió que el equipo se mantuviera tranquilo y eficiente. Sus excelentes habilidades de gestión de crisis crearon un entorno libre de estrés. El liderazgo de Shela garantizó una campaña altamente productiva y exitosa, que cumplió con todos nuestros objetivos y superó las expectativas".
+            </p>
+            <img src="sources/black-line.png" alt="Line" class="line">
+            <p class="testimonial-author">Morgan Franz</p>
+            <p class="testimonial-role">Social Media Manager</p>
+        </div>
+        <div class="card-test">
+            <img src="sources/test4.png" alt="Speech Icon" class="speech-icon">
+            <p class="testimonial-text">
+                "Shela's Waterfall approach to social media management was exceptional. Her meticulous planning and instinct for impromptu content grew our followers from 0 to nearly 2,000 in just 8 weeks. Shela's organizational skills and foresight were key to our rapid growth."
+            </p>
+            <img src="sources/black-line.png" alt="Line" class="line">
+            <p class="testimonial-author">Morgan Franz</p>
+            <p class="testimonial-role">Social Media Manager</p>
+        </div>
+        <div class="card-test">
+            <img src="sources/test1.png" alt="Speech Icon" class="speech-icon">
+            <p class="testimonial-text">
+                "Shela's Waterfall approach to social media management was exceptional. Her meticulous planning and instinct for impromptu content grew our followers from 0 to nearly 2,000 in just 8 weeks. Shela's organizational skills and foresight were key to our rapid growth."
+            </p>
+            <img src="sources/black-line.png" alt="Line" class="line">
+            <p class="testimonial-author">Morgan Franz</p>
+            <p class="testimonial-role">Social Media Manager</p>
+        </div>
+        
+    </section>
+
+    <section id="contacto">
+        <img src="sources/contact-img.png" alt="Contacto" class="contacto">
+        <h1>Contacto</h1>
+        <form action="mailto:correodeejemplo@ejemplo1.com" id="contactUs">
+            <label for="correo">Correo:</label>
+            <div>
+                <input class="escritura" type="email" id="correo" name="correo">
+                <div id="errorCorreo" class="error"></div>
+            </div>
+
+
+            <label for="asunto">Asunto:</label>
+            <div>
+                <input class="escritura" type="text" id="asunto" name="asunto">
+                <div id="errorAsunto" class="error"></div>
+            </div>
+
+            <label for="telefono">Teléfono:</label>
+            <div>
+                <input class="escritura" type="tel" id="telefono" name="telefono">
+                <div id="errorTelefono" class="error"></div>
+            </div>
+
+            <label for="contenido">Mensaje:</label>
+            <div>
+                <textarea class="escritura" id="contenido" name="contenido" rows="10" cols="30"></textarea>
+                <div id="errorContenido" class="error"></div>
+            </div>
+            <br>
+            <div class="botoner">
+                <input type="button" name="enviar" id="enviar" class="boton-cv" onclick ="validarFormulario()" value="Enviar">
+                <input type="reset" name="reset" id="reset" class="boton-contacta" onclick="resetP()">
+            </div>
+            
+                
+        </form>
+        <div id="resultado" class="success"></div>
+    </section>
+    <footer id="footer">
+        <div class="footer-container">
+          <div class="footer-column">
+                <h3>Hablemos por algo 
+                    <span class="special">especial</span>
+                </h3>
+                <p>Busco superar los límites de la creatividad para crear
+                    experiencias digitales atractivas, fáciles de usar y memorables.</p>
+          </div>
+          <div class="footer-column">
+                <h2>Información de contacto</h2>
+                <p>Teléfono : 654 60 45 40</p>
+                <p>Email: <a href="mailto:fernandagonzalez363@gmail.com">fernandagonzalez363@gmail.com</a></p>
+          </div>
+        </div>
+        <div class="footer-social">
+          <a href="https://github.com/fxndx5"><i class="fab fa-github"></i></a>
+          <a href="www.linkedin.com/in/fernanda-gonzález-a84415334"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.threads.net/@feergalv"><i class="fab fa-instagram"></i></a>
+          <a href="https://discord.com/channels/@fxndx5"><i class="fab fa-discord"></i></a>
+        </div>
+        <div class="footer-bottom">
+            <p>© Copyright PortFolio FernandaG. <span id="current-year"></span> | <a href="#">Condiciones de uso</a></p>
+            <button id="scroll-up" class="scroll-up"><b><img alt="chevron-up" src="sources/chevron-up.webp"></b></button>
+        </div>
+
+        <!-- <button id="translateButton" onclick="translateToEnglish()"><b>Traducir</b></button> -->
+        <button id="translateButton" onclick="translateToEnglish()">
+            <img src="https://img.icons8.com/?size=100&id=55009&format=png&color=000000" alt="Traducir">
+        </button>
+        <div id="google_translate_element2" style="display: none;"></div>
+    </footer>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'es', includedLanguages: 'en,fr,de,it,es'}, 
+                'google_translate_element'
+            );
+        }
+        function googleTranslateElementInit2() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'es',
+                autoDisplay: false
+            }, 'google_translate_element2');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="script.js"></script>
+</body>
+</html>

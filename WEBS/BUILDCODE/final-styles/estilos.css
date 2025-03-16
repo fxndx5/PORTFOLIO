@@ -1,0 +1,428 @@
+/*---------------------------Estilos Servicios TI--------------------------*/
+.contenedor-servicios {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}  
+.servicios-it .imagenes {
+    width: 70%;
+    padding: 20px;
+    background-color: white;
+} 
+.box1 {
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
+}
+.texto-servicios {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 50px auto;
+}
+.texto-servicios h1 {
+    font-size: 6vh;
+    color: #21262c;
+    font-weight: bold;
+}
+.servicios-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0 70px 30px 0;
+    text-align: right;
+    align-items: baseline;
+
+}
+
+.servicios-lista li{
+    padding: 10px;
+    margin: 30px;
+    font-size: 3vh;
+    row-gap: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; 
+}
+.servicios-lista li:hover {
+    background-color: var(--azulOscuro); 
+    color: white;
+    transform: scale(1.3); 
+}
+ 
+.servicio {
+    width: 100%;
+    background-color:  white;
+    border-radius: 5px;
+    font-size: 10px;
+    color: var(--azulOscuro);
+    cursor: pointer;
+    box-shadow: 3px 3px 5px var(--verde), 
+    -3px -3px 5px var(--azulClaro);
+    padding: 10px 15px;
+    
+}
+  
+.box2{
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    width: 50%;
+}
+.imagen-con-texto  {
+    background-color: var(--grisTransparente);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 30vw;
+    
+}
+
+#imagen-dinamica {
+    object-fit: contain;
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    max-width: 400px;
+}
+  
+#texto-dinamico{
+    margin-bottom: 5%;
+}
+.texto-sobre-imagen {
+    position: static;
+    text-align: center;
+    color: var(--azulOscuro);
+    font-size: 24px;
+    transition: opacity 0.5s ease-in-out;
+    width: 100%;
+    max-width: 80%;
+    margin-bottom: 15px; 
+}
+.imgArrow{
+    width: 25px;
+    height: 25px;
+    margin: 0 10px;
+}
+
+/*-----------------------------BANNER---------------------------------------*/
+#banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--azulOscuro);
+    background: linear-gradient(45deg,var(--grisTransparente),var(--azulClaro),var(--azulOscuro));
+    padding: 10vh;
+}
+.box-izquierda {
+    width: 100%;
+    box-sizing: border-box;
+    row-gap: 20px;
+}
+
+.box-izquierda h1{
+    margin: 0 0 20px 0;
+    margin-bottom: 20px;
+    font-size: clamp(24px, 6vw, 8vh); 
+
+}
+.box-izquierda p {
+    font-size: 2.5vh ;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.botones{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: baseline;
+    row-gap: 20px;
+    margin-left: 12vw;
+}
+.boton-tryit{
+    margin:10px;
+    margin-left: 5%;
+    padding: 15px 57px;
+    border-radius: 10px;
+    font-size: 27px;
+    background-color: var(--verde) ;
+    transition: all 0.3s ease;
+    color:var(--azulOscuro);
+    border-color: var(--verde)  ;
+}
+.boton-tryit:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px var(--azulOscuro);
+    cursor: pointer;
+}
+
+.boton-demo{
+    margin:10px;
+    margin-left: 5%;
+    padding: 15px 57px;
+    border-radius: 10px;
+    font-size: 27px;
+    background-color:rgb(255, 255, 255) ;
+    transition: all 0.3s ease;
+    color:var(--verde);
+}
+.boton-demo:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px var(--verde);
+    cursor: pointer;
+}
+.box-derecha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+.box-derecha video {
+    width: 100%;
+    max-width: 70%;
+    border-radius: 10px;
+  }
+
+
+/*-----------------------------CLIENTES------------------------------------*/
+.clientes {
+    height: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    color: var(--azulOscuro);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.clientes h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.clientes-imagenes {
+    display: flex;
+    gap: 10px;
+}
+
+.clientes-imagenes img {
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.clientes-imagenes img:hover {
+    transform: scale(1.05);
+}
+
+/* --------------------------------------SERVICIOS-TIEMPO--------------------------- */
+.contenedor-tiempo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 90%;
+    margin: 5% auto; 
+}
+
+.box3 {
+    background-color: var(--azulOscuro);
+    color: white;
+    padding: 20px;
+    margin: 15px;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    font-size: 1vw;
+}
+.box3 h3{
+    font-size: 2vw;
+}
+.box3:hover {
+    transform: scale(1.05);
+    box-shadow: 15px 15px 15px var(--verde);
+    cursor: pointer;
+}
+
+.box3 img {
+    width: 50px;
+    height: 50px;
+}
+.texto-tiempo {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 50px auto;
+}
+.texto-tiempo h1 {
+    color: var(--verdeOscuro);
+    font-size: 4.5vh;
+    font-weight: bold;
+}
+/*-------------------------------------Responsive-----------------------------------------*/
+@media (max-width:1032px) and (min-width:621px){
+    #banner {
+        flex-direction: column;
+        padding: 10px;
+        background: linear-gradient(160deg,var(--grisTransparente),var(--azulClaro),var(--azulOscuro));        
+    }
+    .box-izquierda {
+        max-width: 100%;
+    }
+    .box-izquierda h1 {
+        font-size: 7vh; 
+    }
+    .botones {
+        flex-direction: column;
+        align-items: baseline; 
+        margin: 0 20vw 0 30vw;
+    }
+
+    .boton-tryit ,.boton-demo {
+        font-size: 4vw;
+        padding: 15px 15px;
+    }
+
+    .box-derecha video {
+        width: 110%;
+    }
+    /* -------SERVICIOS------ */
+    .texto-servicios h1{
+        font-size: auto;
+    }
+    .servicio{
+        font-size: 4vw;
+        text-align: center;
+        width: auto;
+    }
+    .imagen-con-texto {
+        display: none;
+    }
+    .contenedor-box {
+        flex-direction: column;
+        margin: 10% auto;
+    }
+    /* --------CLIENTES-------- */
+    .clientes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: 10vh;
+        max-width: 80%;
+        width: 100%;
+        max-width: 70vw;
+        padding: 2vh 0 18vh 0;
+    }
+    .clientes-imagenes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 90%;
+        z-index: 0;
+    }
+    /* ------SERVICIOS-TIEMPO---------- */
+    .texto-tiempo h1{
+        font-size: 4.5vw;
+    }
+    .box3 h3{
+        font-size: 5vw;
+    }
+    .box3 p{
+        font-size: 2.5vw;
+    }
+
+} 
+
+
+
+
+@media (max-width:620px) and (min-width:300px) {
+    #banner {
+        flex-direction: column;
+        padding: 10px;
+        background: linear-gradient(160deg,var(--grisTransparente),var(--azulClaro),var(--azulOscuro));        
+    }
+    .box-izquierda {
+        max-width: 100%;
+    }
+    .box-izquierda h1 {
+        font-size: 7vh; 
+    }
+    .botones {
+        flex-direction: column;
+        align-items: baseline; 
+        margin: 0 20vw 0 30vw;
+    }
+
+    .boton-tryit ,.boton-demo {
+        font-size: 4vw;
+        padding: 10px 10px;
+    }
+
+    .box-derecha video {
+        width: 110%;
+    }
+    /* -------SERVICIOS------ */
+    .texto-servicios h1{
+        font-size: auto;
+    }
+    .servicio{
+        font-size: 30px;
+        text-align: center;
+        width: auto;
+    }
+    .servicios-lista{
+        margin: 0 8px 17px 0;
+    }
+    .imagen-con-texto {
+        display: none;
+    }
+    /* .contenedor-box {
+        flex-direction: column;
+        margin: 10% auto;
+    } */
+    /* --------CLIENTES-------- */
+    .clientes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: 50px;
+        width: 100%;
+        padding: 2vh 0 18vh 0;
+    }
+    .clientes-imagenes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 90%;
+        z-index: 0;
+    }
+    /* ------SERVICIOS-TIEMPO---------- */
+    .texto-tiempo h1{
+        font-size: 30px;
+    }
+    .box3 h3{
+        font-size: 25px;
+    }
+    .box3 p{
+        font-size: 17px;
+    }
+
+}

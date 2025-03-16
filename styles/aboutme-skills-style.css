@@ -1,0 +1,672 @@
+/*---------------ABOUT ME -------------------*/
+#about-me{
+    align-items: center;
+    text-align: center;
+}
+.img-aboutme{
+    display: none;
+}
+.style-h3{
+    text-align: start;
+    margin-left: 15px;
+    margin-top: 12px;
+    color:#3333338e
+}
+#about-me h1{
+    font-size: 3.5rem;
+    text-shadow: 1px 1px 30px rgba(255, 0, 157, 0.932) ;
+    padding: 20px;
+    margin: 10px;
+    animation: fadeIn 3s ease-in infinite;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+#about-me p{
+    font-size: 18px;
+    padding: 0 25px 0 25px;
+}
+.card-info-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 40px;
+    padding: 20px;
+}
+.menu-social-aboutme {
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    margin: 30px;
+}
+    
+.menu-social-aboutme a {
+    color: white ;
+    font-size: 37px;
+    margin-right: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+    transition: color 0.3s, transform 0.3s ease;
+}
+
+.menu-social-aboutme a:hover {
+    color:#ffa600 ;
+    transform: scale(1.3);
+}
+
+/* ---------CIRUCLOS HOBBIES------------ */
+.esta-soy-yo {
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.intro h2 {
+    padding-top: 30px;
+    font-size: 3em;
+    color: #333333;
+
+}
+
+.intro p {
+    font-size: 1em;
+    color: #333;
+    margin: 20px 5px;
+} 
+.circulos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    margin-top: 120px;
+}
+
+.circulo {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 1.5s ease, transform 1s ease;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    text-align: center;
+    padding: 10px;
+}
+
+.parrafo-hobbie {
+    color: #666;
+    opacity: 0;
+    position: absolute;
+    width: 70%;
+    text-align: center;
+    border-radius: 5px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.circulo:hover .parrafo-hobbie {
+    opacity: 1;
+    transform: translateY(-10px);
+    transition: opacity 0.1s ease-in-out, transform 0.3s ease-in-out;
+}
+.circulo h3 {
+    font-size: 20px;
+    color: #0e0d0d;
+}
+
+.circulo:hover h3 {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    transform: translateY(-10px);
+}
+
+/* Posicionamiento de los círculos */
+#circulo1 {
+    background-color:rgba(255, 0, 157, 0.24);
+    top: -12%; 
+    left: 16%;
+    transition: background-color 1s ease-in-out;
+}
+#circulo1:hover{
+    background-color: rgba(245, 62, 175, 0.507);
+}
+#circulo2 {
+    background-color: rgba(138, 192, 190, 0.363);
+    top: 50%;
+    left: -8%;
+    transform: translate(-50%, -50%);
+    transition: background-color 1s ease-in-out;
+}
+#circulo2:hover {
+    background-color: rgba(137, 226, 223, 0.788);
+}
+
+#circulo3 {
+    background-color: rgba(255, 255, 0, 0.253);
+    top: 50%;
+    left: 40%;
+    transition: background-color 1s ease-in-out;
+}
+#circulo3:hover {
+    background-color: rgba(255, 255, 0, 0.589);
+}
+
+#circulo0, #circulo4, #circulo5, #circulo6, #circulo7, #circulo8{
+    display: none;
+}
+
+.circulos.visible .circulo {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* ----------SKILLS--------------- */
+
+.skills2 {
+    margin: 50px 10px;
+}
+
+.skills2 h1 {
+    font-size: 3.5rem;
+    margin: 50px  30px;
+    font-weight: bold;
+    text-shadow: 3px 3px 5px rgba(231, 87, 236, 0.589);
+    animation: bounce 1s ease infinite;
+    opacity: 1;
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: auto;
+}
+
+
+.skill-category {
+    background: rgba(255, 255, 255, 0.308);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.skill-category h3 {
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+}
+
+
+.skill-items {
+    display: grid;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.skill-item {
+    background-color: white;
+    color: black;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 10px;
+    gap: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.skill-item img {
+    width: 90px;
+    height: 90px;
+    margin:  0 10px;
+    object-fit: contain;
+    transition: all 0.3s ease; 
+}
+.skill-item img:hover {
+    transform: scale(1.3);
+}
+/*------------------RESPONSIVE--------------------- */
+@media (min-width: 550px) and (max-width: 767px) {
+    #about-me{
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        padding: 50px;
+        margin-bottom: 50px;
+    }
+    .style-h3{
+        display: none;
+    }
+    #about-me h1{
+        text-shadow: 0px 0px 20px rgba(255, 165, 124, 0.932);
+    }
+    #about-me p{
+        font-size: 20px;
+        margin:20px;
+    }
+    .img-aboutme {
+        display: block;
+        width: 400px;
+        height: 400px;
+        margin-top: 40px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 4px solid orange;
+        filter: drop-shadow(0px 0px 20px rgba(255, 165, 124, 0.932));
+        transition: all 0.3s ease-in-out;
+    }
+
+    .img-aboutme img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .img-aboutme:hover .default-img {
+        opacity: 0;
+    }
+
+    .img-aboutme:hover .hover-img {
+        opacity: 1;
+    }
+
+    .hover-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .img-wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    .menu-social-aboutme a{
+        color:#ffa600;
+    }
+    .circulos{
+        margin:9% 9% 3% 9%;
+        position: relative;
+    }
+    #circulo0, #circulo4, #circulo5, #circulo6, #circulo7, #circulo8{
+        display: block;
+    }
+    #circulo0 {
+        background-color: rgba(255, 255, 0, 0.377);
+        top: -55%;
+        left: -11%;
+        width: 120px;
+        height: 120px;
+    }
+    #circulo4 {
+        background-color: rgba(187, 154, 219, 0.486);
+        top: -30%;
+        left: 54%;
+        width: 190px;
+        height: 190px;
+    }
+    #circulo5 {
+        background-color: rgb(0 255 154 / 16%);
+        top: 80%;
+        left: 68%;
+        width: 290px;
+        height: 290px;
+    }
+    #circulo6 {
+        background-color: rgb(255 115 0 / 38%);
+        top: -19%;
+        left: -31%;
+        width: 300px;
+        height: 300px;
+    }
+    #circulo7 {
+        background-color: rgb(147 255 0 / 28%);
+        top: 120%;
+        left: 18%;
+        width: 130px;
+        height: 130px;
+    }
+    #circulo8 {
+        background-color: rgba(151, 138, 239, 0.521);
+        top: 102%;
+        left: -28%;
+        width: 230px;
+        height: 230px;
+    }
+    #circulo1 {top: -12%;animation: float 6s ease-in-out infinite;}
+    #circulo2 {top: 50%;animation:float 4s ease-in-out infinite; }
+    #circulo3 {top: 50%;animation:float 2s ease-in-out infinite; }
+    #circulo0, #circulo4, #circulo5, #circulo6, #circulo7, #circulo8{animation:float 3s ease-in-out infinite;}
+    @keyframes float {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+    .skill-category{
+        width: auto;
+    }
+
+    
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    #about-me{
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        padding: 50px;
+        margin-bottom: 50px;
+    }
+    .style-h3{
+        display: none;
+    }
+    #about-me h1{
+        text-shadow: 0px 0px 20px rgba(255, 165, 124, 0.932);
+    }
+    #about-me p{
+        font-size: 20px;
+        margin:20px;
+    }
+    .img-aboutme {
+        display: block;
+        width: 400px;
+        height: 400px;
+        margin-top: 40px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 4px solid orange;
+        filter: drop-shadow(0px 0px 20px rgba(255, 165, 124, 0.932));
+        transition: all 0.3s ease-in-out;
+    }
+
+    .img-aboutme img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .img-aboutme:hover .default-img {
+        opacity: 0;
+    }
+
+    .img-aboutme:hover .hover-img {
+        opacity: 1;
+    }
+
+    .hover-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .img-wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    .menu-social-aboutme a{
+        color:#ffa600;
+    }
+    .circulos{
+        margin-left:14%;
+        position: relative;
+    }
+    #circulo0, #circulo4, #circulo5, #circulo6, #circulo7, #circulo8{
+        display: block;
+    }
+    #circulo0 {
+        background-color: rgba(255, 255, 0, 0.377);
+        top: -55%;
+        left: -11%;
+        width: 120px;
+        height: 120px;
+    }
+    #circulo4 {
+        background-color: rgb(187 154 219 / 72%);
+        top: -30%;
+        left: 54%;
+        width: 190px;
+        height: 190px;
+    }
+    #circulo5 {
+        background-color: rgb(0 255 154 / 16%);
+        top: 80%;
+        left: 68%;
+        width: 290px;
+        height: 290px;
+    }
+    #circulo6 {
+        background-color: rgb(255 115 0 / 38%);
+        top: -19%;
+        left: -31%;
+        width: 300px;
+        height: 300px;
+    }
+    #circulo7 {
+        background-color: rgb(147 255 0 / 28%);
+        top: 120%;
+        left: 18%;
+        width: 130px;
+        height: 130px;
+    }
+    #circulo8 {
+        background-color: rgb(152 138 239 / 69%);
+        top: 102%;
+        left: -28%;
+        width: 230px;
+        height: 230px;
+    }
+    #circulo1 {top: -12%;animation: float 3s ease-in-out infinite;}
+    #circulo2 {top: 50%;animation:float 3s ease-in-out infinite; }
+    #circulo3 {top: 50%;animation:float 3s ease-in-out infinite; }
+    #circulo0, #circulo4, #circulo5, #circulo6, #circulo7, #circulo8{animation:float 3s ease-in-out infinite;}
+    @keyframes float {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    /* SKILLS */
+    #skills{
+        margin:0px 80px;
+    }
+    .skill-category{
+        width: auto;
+    }
+}
+@media (min-width: 1025px) {
+    #about-me{
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        padding: 50px;
+        margin-bottom: 50px;
+    }
+    .style-h3{
+        display: none;
+    }
+    #about-me h1{
+        text-shadow: 0px 0px 20px rgba(255, 165, 124, 0.932);
+    }
+    #about-me p{
+        font-size: 20px;
+        margin:20px;
+    }
+    .img-aboutme {
+        display: block;
+        width: 400px;
+        height: 400px;
+        margin-top: 40px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 4px solid orange;
+        filter: drop-shadow(0px 0px 20px rgba(255, 165, 124, 0.932));
+        transition: all 0.3s ease-in-out;
+    }
+
+    .img-aboutme img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .img-aboutme:hover .default-img {
+        opacity: 0;
+    }
+
+    .img-aboutme:hover .hover-img {
+        opacity: 1;
+    }
+
+    .hover-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .img-wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    .menu-social-aboutme a{
+        color:#ffa600;
+    }
+    .intro h1 {
+        font-size: 3.5em;
+    }
+    
+    .intro p {
+        font-size: 1.4em;
+    }
+    .circulos{
+        margin-left:23%;
+        position: relative;
+        
+    }
+    #circulo0, #circulo4, #circulo5, #circulo6, #circulo7, #circulo8{
+        display: block;
+    }
+    #circulo0 {
+        background-color: rgba(255, 255, 0, 0.377);
+        top: -55%;
+        left: -11%;
+        width: 120px;
+        height: 120px;
+    }
+    #circulo4 {
+        background-color: rgb(187 154 219 / 72%);
+        top: -30%;
+        left: 54%;
+        width: 190px;
+        height: 190px;
+    }
+    #circulo5 {
+        background-color: rgb(0 255 154 / 16%);
+        top: 80%;
+        left: 68%;
+        width: 290px;
+        height: 290px;
+    }
+    #circulo6 {
+        background-color: rgb(255 115 0 / 38%);
+        top: -19%;
+        left: -31%;
+        width: 300px;
+        height: 300px;
+    }
+    #circulo7 {
+        background-color: rgb(147 255 0 / 28%);
+        top: 120%;
+        left: 18%;
+        width: 130px;
+        height: 130px;
+    }
+    #circulo8 {
+        background-color: rgb(152 138 239 / 69%);
+        top: 102%;
+        left: -28%;
+        width: 230px;
+        height: 230px;
+    }
+    #circulo1{top: -12%;animation: float 3s ease-in-out infinite;}
+    #circulo2 {top: 50%;animation:float 3s ease-in-out infinite; }
+    #circulo3 {top: 50%;animation:float 3s ease-in-out infinite; }
+    #circulo0, #circulo4, #circulo5, #circulo6, #circulo7, #circulo8{animation:float 3s ease-in-out infinite;}
+    @keyframes float {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+    .skill-category{
+        width: auto;
+    }
+    .skill-items{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .skill-item{
+        width: 170px;
+        height: 170px;
+    }
+}

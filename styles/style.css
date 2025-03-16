@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;  
+    box-sizing: border-box;
+}
+body {
+    /* font-family: "Square Peg", cursive; */
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #333333;
+    overflow-x: hidden;
+    height: 100vh;
+    background: linear-gradient(270deg, #ffc6ff, #fdffb6, #caffbf, #b6f6ff, #ffceffc2);
+    background-size: 400% 400%;
+    animation: gradienteAnimation 60s ease infinite;
+}
+
+@keyframes gradienteAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/*--------------DARK MODE-----------------*/
+body.dark-mode {
+    background: linear-gradient(270deg , #c45161 , #bc5090 , #ffa600, #58508d , #bc5090, #c45161);
+    background-size: 600% 600%;
+    animation: gradienteAnimation 60s linear infinite;
+    color: white;
+}
+h2.dark-mode{
+    color:white;
+}
+.menu.dark-mode{
+    background-color: #58508dde;
+}
+.navbar a:hover.dark-mode{
+    background-color: #db9943f1;
+    color:white;
+}
+@keyframes gradienteAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+.experience.dark-mode {
+    background-color: #c451602c;
+    color: white;
+}
+.experience1.dark-mode {
+    background-color: #c451602c;
+    color: white;
+}
+.experience2.dark-mode {
+    background-color: #c451602c;
+    color: white;
+}
+.experience3.dark-mode {
+    background-color: #c451602c;
+    color: white;
+}
+.card.dark-mode{
+    background-color: #5f588bde;
+}
+.card p.dark-mode{
+    color:white;
+}
+.title-project.dark-mode{
+    font-family: monospace;
+    color: white;
+}
+.h1-aboutme.dark-mode{
+    color:#333333
+}
+#about-me p.dark-mode{
+    color:#333333
+}
+
+.menu-social-aboutme a.dark-mode{
+    color: #6a62a1;
+    filter: drop-shadow(0px 0px 20px white);
+}
+.menu-social-aboutme a:hover.dark-mode{
+    color:white;
+}
+
+
+
+@media (min-width: 768px)  { 
+    
+    .menu-social-aboutme a.dark-mode{
+        color:#db9943f1;
+        filter: drop-shadow(0px 0px 20px rgba(219, 153, 67, 0.945));
+    }
+    .menu-social-aboutme a:hover.dark-mode{
+        color:#9bf6ff ;
+    }
+}

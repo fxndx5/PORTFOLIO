@@ -1,0 +1,84 @@
+/*--------------------CONTACTA--------------------------- */
+#contacto img{
+    animation: slideIn 5s ease-out infinite ;
+}
+@keyframes slideIn {
+    from {
+        transform: translateX(-100vw);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+#contacto h1{
+    width: 100%;
+    padding: 4vh 0px 0 0;
+    text-align: center;
+    margin: auto;
+    font-size: 3rem;
+}
+
+#contacto h3{
+    color: white;
+    width:  60vw;
+    padding: 0 0 35px 0;
+    text-align: center;
+    margin: auto;
+}
+
+#contacto{
+    width: 100%;
+    height: fit-content;
+    justify-items: center;
+    padding: 5px;
+}
+
+#contactUs{
+    font-weight: bold;
+    border-radius: 20px;
+    width: 80vw;
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin: 10px 20px 10% 20px;
+    padding: 20px;
+    align-items:flex-start;
+    
+}
+#contactUs label{
+    text-align: end;
+    font-size: 0.95rem;
+    margin: 3px 13px 24px 0px;
+}
+#contactUs input[type="text"], 
+    #contactUs input[type="tel"], 
+        #contactUs input[type="email"], 
+            #contactUs textarea{
+    margin: 5px 0px 5px 0px;
+    padding: 5px;
+    width: 90%;
+    border-radius: 50px;
+    border: none;
+}
+.botoner {
+    display: flex;
+    gap: 20px;
+    justify-content: center; 
+    margin-top: 15px;
+}
+.escritura{
+    text-align:center;
+}
+.error { 
+    color: rgba(255, 0, 0, 0.692); 
+    font-size: 12px; 
+} 
+#resultado {
+    border-radius: 20px;
+    font-size: 20px;
+    text-align: center;
+    margin:10px;
+    padding: 10px;
+} 

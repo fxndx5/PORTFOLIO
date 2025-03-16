@@ -1,0 +1,250 @@
+<!-- 
+
+ Integrantes del grupo:
+ 
+    Fernanda Gonzalez 
+    Erika Lorenzo
+    Guilelrmo Santos 
+    
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>BuildCode</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="widt=device-widht, initial-scale=1.0">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="final-styles/estilos.css">
+        <link rel="stylesheet" href="final-styles/bmf.css">
+
+        <link rel="shortcut icon" href="resources/img/icon.png">
+        
+        
+        <script src="scripts.js"></script>   
+        
+    </head>
+    <body>
+        <header>
+            <div class="info">
+                <p class="noticia">Rate BuildCode No.1 in Twelve IT Categories in G2's Winter 2025 Report</p>
+                
+                <div class="interact">
+                    <a class="enlaces" id="strong" href="servicios.html"><b>Learn More</b></a>
+                    <a class="enlaces" href="contacto.html">Contacto</a>
+
+                    <img src="resources/globo.png" class="icono" alt="globo-img">
+                    <button id="idiomas-btn" >ESP</button>
+
+                        <div class = "idiomas-menu">
+                            <p class="idioma">Español</p>
+                            <p class="idioma">Inglés</p>
+                            <p class="idioma">Francés</p>
+                            <p class="idioma">Alemán</p>     
+                        </div>
+                   
+
+                    <form class="barrabusqueda">
+                        <input type="text" class="searchInput">
+                        <img class="searchBtt" id="searchBttn" src="resources/lupa.png">   
+                    </form>
+                </div>
+                
+            </div>
+
+
+
+            <nav class="menu">
+                <img class="logo" src="resources/img/logo-horizontal.png" alt="Mi sitio">
+                <img class="logo-icon" src="resources/img/icon.png" alt="Mi sitio">
+
+                <div class="menu-links">
+                    <a href="INDEX.html">HOME</a>
+                    <a href="servicios.html">Servicios</a>
+                    <a href="conocenos.html">¿Quiénes somos?</a>
+                    <a href="comunidad.html">Comunidad</a>
+                    <div class="animation start-index"></div>
+                </div>
+                
+                <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+            </nav>
+        </header>
+        <main>
+            <section id="banner">
+                <div class="box-izquierda">
+                    <h1>Automatizamos la parte mas difícil de TI</h1>
+                    <p>Simplicamos TI y la seguridad con una unica 
+                    plataforma de gestion de terminales</p>
+                    <div class="botones">
+                        <button class="boton-tryit" onclick="window.alert('Gracias por su interes')" ><b>Prueba gratis</b></button>
+                        <button class="boton-demo" onclick="window.alert('Gracias por su interes')"><b>Wacth DEMO</b></button>
+                    </div>
+                </div>
+                <div class="box-derecha">
+                    <video controls autoplay muted loop>
+                        <source src="resources/img/dashboard.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </section>
+            <div class="texto-servicios">
+                <h1>Plataforma de gestión automatizada de puntos finales</h1>
+            </div>
+            <section id="contenedor-servicios" class="contenedor-servicios">
+                <div class="servicios-it box1">
+                    <ul class="servicios-lista">
+                        <li class="servicio " data-img="img1" data-text="texto1" onclick="location.href='servicios.html#servicio1'">
+                            Gestión de puntos finales
+                            <img class="imgArrow"  src="resources/greenArrow.png" alt="flecha">
+                        </li>
+                        <li class="servicio" data-img="img2" data-text="texto2" onclick="location.href='servicios.html#servicio2'">
+                            Monitoreo y gestión remota
+                            <img class="imgArrow"  src="resources/greenArrow.png" alt="flecha">
+                        </li>
+                        <li class="servicio" data-img="img3" data-text="texto3" onclick="location.href='servicios.html#servicio3'">
+                            Gestión de dispositivos móviles 
+                            <img class="imgArrow"  src="resources/greenArrow.png" alt="flecha">
+                        </li>
+                        <li class="servicio" data-img="img4" data-text="texto4" onclick="location.href='servicios.html#servicio4'">
+                            Gestión de parches
+                            <img class="imgArrow"  src="resources/greenArrow.png" alt="flecha">
+                        </li>
+                        <li class="servicio" data-img="img5" data-text="texto5" onclick="location.href='servicios.html#servicio5'">
+                            Respaldo
+                            <img class="imgArrow"  src="resources/greenArrow.png" alt="flecha">
+                        </li>
+                    </ul>
+                </div>
+            
+                <div class="imagen-con-texto box2">
+                    <p id="texto-dinamico" class="texto-sobre-imagen"><b>Creamos sitios web increíbles y funcionales</b></p>
+                    <img id="imagen-dinamica" src="./resources/service1.png" alt="Imagen por defecto">
+                </div>
+            </section>
+            <div class="texto-tiempo">
+                <h1>Rápido de configurar, fácil de aprender, la mejor relación calidad-precio de su clase</h1>
+            </div>
+            <section class="contenedor-tiempo">
+                <div class="box3">
+                    <img src="https://www.ninjaone.com/wp-content/uploads/2024/07/calendar_green.svg" alt="Calendario Verde">
+                    <h3>1 semana</h3>
+                    <p>La mayoría de los usuarios de BuildCode están completamente operativos en menos de una semana.</p>
+                </div>
+        
+                <div class="box3">
+                    <img src="https://www.ninjaone.com/wp-content/uploads/2024/07/clock_green.svg" alt="Reloj Verde">
+                    <h3>3 horas</h3>
+                    <p>Aprender las tareas de BuildCode lleva menos de 3 horas en promedio, empieza ahora.</p>
+                </div>
+        
+                <div class="box3">
+                    <img src="https://www.ninjaone.com/wp-content/uploads/2024/07/time_green.svg" alt="Tiempo Verde">
+                    <h3>6 meses</h3>
+                    <p>BuildCode produce un ROI positivo en la mitad del tiempo que otras aplicaciones de servicios.</p>
+                </div>
+        
+                <div class="box3">
+                    <img src="https://www.ninjaone.com/wp-content/uploads/2024/07/roi_green.svg" alt="ROI Verde">
+                    <h3>10 horas</h3>
+                    <p>Los equipos de TI dedican más de 10 horas menos a administrar BuildCode que las soluciones anteriores.</p>
+                </div>
+            </section>
+        
+            <section class="clientes">
+                <h1>
+                    Los clientes nos califican como el número 1 en gestión unificada de puntos finales, RMM y gestión de parches
+                </h1>
+                <div class="clientes-imagenes">
+                    <a >
+                        <img src="resources/img/premio1.svg" alt="G2 Leader 1">
+                    </a>
+                    <a>
+                        <img src="resources/img/premio2.svg" alt="G2 Leader 2">
+                    </a>
+                </div>
+            </section>
+            <section class="cta">
+                <h3>Prueba los servicios de BuildCode</h3>
+                <button class="borde" onclick="window.alert('Gracias por su interes')"><b>Prueba gratis</b></button>
+                <button class="borde" onclick="window.alert('Gracias por su interes')"><b>DEMO</b></button>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-container">
+              <div class="footer-column">
+                    <h3>Productos</h3>
+                    <ul>
+                        <li><b>RMN</b></li>
+                        <li>Gestión de puntos finales</li>
+                        <li>Gestión de parches</li>
+                        <li>Acceso remoto</li>
+                        <li><b>MDM</b></li>
+                        <li>Documentación</li>
+                        <li>Respaldo</li>
+                        <li>Hoja de ruta del producto</li>
+                    </ul>
+              </div>
+          
+              <div class="footer-column">
+                <h3>Recursos</h3>
+                    <ul>
+                        <li>Centro de recursos</li>
+                        <li>Blog</li>
+                        <li>Centro de TI</li>
+                        <li>API para desarrolladores</li>
+                        <li>Estado del sistema</li>
+                        <li>Centro de confianza</li>
+                    </ul>
+              </div>
+          
+              <div class="footer-column">
+                <h3>Compañía</h3>
+                <ul>
+                  <li>Sobre nosotros</li>
+                  <li>Comunidad</li>
+                  <li>Preguntas frecuentes</li>
+                  <li>Licencia</li>
+                </ul>
+              </div>
+          
+              <div class="footer-column">
+                <h3>Cumplimiento</h3>
+                    <ul>
+                        <li>Aviso de privacidad</li>
+                        <li>HIPAA</li>
+                        <li>ISO 27001</li>
+                        <li>Recompensa por errores</li>
+                        <li>Derechos de privacidad de España</li>
+                    </ul>
+              </div>
+              <div class="footer-column">
+                    <h3>Información de contacto</h3>
+                    <p>América del Norte: +1 888 542-8339</p>
+                    <p>Alemania: +49 30-76758700</p>
+                    <p>Reino Unido: +44 20 3880 9027</p>
+                    <p>Francia: +33 800 91 09 90</p>
+                    <p>España: +34 930 03 80 68</p>
+                    <p>Italia: (+39) 800 974 708</p>
+                    <p>Asia Pacífico: +61 1800 490 516</p>
+                    <p>Email: <a href="mailto:ventas@buildcode.com">ventas@buildcode.com</a></p>
+              </div>
+            </div>
+          
+            <div class="footer-social">
+              <a href="#"><i class="facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-discord"></i></a>
+            </div>
+          
+            <div class="footer-bottom">
+              <p>© Copyright BuildCode <span id="current-year"></span> | <a href="#">Condiciones de uso</a></p>
+              <button id="scroll-up" class="scroll-up"><b>↑ Volver arriba</b></button>
+            </div>
+        </footer>
+          
+        <script src="scripts/scripts.js"></script>
+        <script src="scripts/responsive_menu.js"></script>
+    </body>
+</html>

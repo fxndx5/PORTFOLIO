@@ -1,0 +1,100 @@
+/* --------------------TESTIMONIALS-------------------- */
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 50px;
+}
+.testimonials-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 30px rgba(255, 0, 157, 0.932) ;
+    /* color: #bc5090; */
+    text-align: left;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    animation: zoomIn 5s ease-in-out infinite;
+    opacity: 1;
+}
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+}
+.card-test {
+    background-color: #ffffff4f;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    width: 90%; 
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1.5s ease, transform 0.5s ease;
+    padding:20px;
+    margin:9px;
+    text-align: center;
+}
+
+.card-test.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.speech-icon {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 40px 15px;
+}
+
+.testimonial-text {
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 15px;
+    color: #444;
+
+    padding: 1vh 2vh;
+    hyphens: auto;
+}
+
+.line {
+    width: 100px;
+    height: 50px;
+    margin: 10px auto;
+    display: block;
+}
+
+.testimonial-author {
+    font-weight: bold;
+    color: #444;
+}
+
+.testimonial-role {
+    color: #777;
+    font-size: 12px;
+}
+.arrows{
+    display: none;
+}
+
+/*--------------RESPONSIVE-------------------- */
+@media screen and (min-width: 1024px) {
+    .scroll-container {
+        flex-direction: row;
+        gap: 30px;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        white-space: nowrap;
+        padding: 20px;
+        width: 80%;
+    }
+
+    .scroll-container::-webkit-scrollbar {
+        display: none; /* Ocultar scrollbar */
+    }
+
+}

@@ -1,0 +1,93 @@
+/* -------------BUTTON------------------ */
+.botones button{
+    margin-right: 17px;
+    color: white;
+}
+.boton-cv{
+    font-family: monospace; font-weight: bold;
+    background-color: #f0c7d7;
+    border-color:#ffc6ff ;
+    border-radius: 5px;
+    padding: 7px;
+    margin-right:30px 20px 10px 20px;
+    transition: all 0.3s ease;
+}
+.boton-cv:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px #bc5090;
+}
+.boton-contacta{
+    font-family: monospace; font-weight: bold;
+    background-color: #aeeaf0;
+    border-color: #9bf6ff;
+    border-radius: 5px;
+    padding: 7px;
+    margin-right:20px 20px 10px 20px;
+    transition: all 0.3s ease;
+}
+.boton-contacta.boton-contacta:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px #43b0f1;
+}
+.boton-darkmode{
+    display: block;
+    cursor: pointer;
+    background-color: #ffa600;
+    border-color: #ffa600 ;
+    border-radius: 10px;
+    padding: 5px 5px 5px;
+    color: white;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+/* Estilo del botón flotante */
+#translateButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ee84c4 ;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 0 18px rgba(255, 255, 255, 0.767);
+    transition: background-color 0.3s ease box-shadow 0.3s ease;
+    display: block;
+}
+#translateButton img{
+    height: 45px;
+    width: 45px;
+}
+
+#translateButton:hover {
+    background-color:  #ffa600 ;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.637);
+    
+}
+
+/*------------RESPONSIVE----------------- */
+@media (min-width: 768px) {
+    .boton-darkmode{
+        margin-left: 8px;
+        width: auto;
+        height: 58px;
+    }
+    #translateButton {
+        display: block; 
+        bottom: 67%;
+        right: -2px;
+    } 
+    
+}
+@media (max-width: 767px) {
+    #translateButton {
+        display: none;
+        bottom: 67%;
+        right: -2px;
+    }
+}

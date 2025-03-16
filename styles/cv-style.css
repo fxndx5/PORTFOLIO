@@ -1,0 +1,207 @@
+/*----------------CURRICULUM----------------------*/
+#cv{
+    margin: 100px 20px; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;   
+}	
+#cv h1 {
+    font-size: 3.7rem;
+    text-shadow: 3px 3px 6px rgba(228, 182, 55, 0.589);
+    -webkit-background-clip: text;background-clip: text;
+    animation: slideIn 2s ease-out forwards ;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(-50px);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+#curriculum p{
+    font-size: 1em;
+}
+.curriculum-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-left: 6px solid #f1a548;
+    position: relative;
+    padding: 25px 10px 30px;
+    opacity: 1;
+    transform: translateY(50px);
+    transition: opacity 1s ease-in, transform 1s ease-in;
+}
+.p-large{
+    display: none;
+}
+.years, .years1, .years2, .years3{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    text-shadow: 2px 2px 5px #3333, 
+                -2px -2px 5px #3333, 
+                2px -2px 5px #3333, 
+                -2px 2px 5px #3333;
+}
+.experience:hover .years {
+    color: #ff5733;
+}
+
+
+.experience, .experience1, .experience2, .experience3{
+    padding: 15px;
+    background-color: rgba(173, 216, 230, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.61);
+    transition: background-color 0.3s ease; 
+    flex:1;
+}
+.curriculum-container h2{
+    text-align: center;
+    font-size: 18px;
+}
+.curriculum-container h4{
+    font-size: 15px;
+}
+
+.experience:hover{
+    background-color: #caffbfa2;
+}
+.experience1:hover{
+    background-color: #ffc6ffa2;
+}
+.experience2:hover{
+    background-color: #fdffb6a2;
+}
+.experience3:hover{
+    background-color: #ffd6a5a2;
+}
+.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+@media (min-width: 500px) and (max-width: 767px) {
+    #cv{
+        background-color:#ffffff;
+        width: 100%;
+        height: auto;
+        padding-bottom: 18%;  
+        margin: 0;
+    }
+    .curriculum-container {
+        flex-direction: row;
+        width: 90%;
+    }
+    .curriculum-container h2, h4{
+        text-align: center;
+    }
+    .curriculum-container p{
+        font-size: 0.8em;
+    }
+    .experience, .experience1, .experience2, .experience3{
+        height: 30%;
+        background: rgba(255, 255, 255, 0.308);
+    }
+    .experience p, .experience1 p, .experience2 p, .experience3 p{
+        display:none;
+    }
+    .experience {
+        text-align: left;
+        padding: 20px;
+    }
+
+    .timeline {
+        width: 5px;
+    }
+
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    #cv{
+        margin:0;
+        width: 100%;
+        height: auto;
+        padding-bottom: 10%;
+        background-color:#ffffff;
+    }
+    .curriculum-container {
+        flex-direction: row;
+        width: 80%;
+        height: auto;
+    }
+    .curriculum-container h2{
+        text-align: center;
+        font-size: 20px;
+    }
+    .curriculum-container h4{
+        font-size: 16px;
+    }
+    .curriculum-container p{
+        font-size: 0.8em;
+    }
+    .experience, .experience1, .experience2, .experience3{
+        background: rgba(255, 255, 255, 0.308);
+    }
+    .experience p, .experience1 p, .experience2 p, .experience3 p{
+        display:none;
+    }
+    .p-large{
+        display: block;
+        font-size: 8rem;
+    }
+    .experience {
+        text-align: left;
+        padding: 20px;
+    }
+
+    .timeline {
+        width: 5px;
+    }
+}
+@media (min-width: 1025px){
+    .curriculum-container {
+        flex-direction: row;
+        width: 65%;
+        height: auto;
+    }
+    .experience, .experience1, .experience2, .experience3{
+        background: rgba(255, 255, 255, 0.308);
+    }
+    .experience p, .experience1 p, .experience2 p, .experience3 p{
+        display:block;
+    }
+
+    .curriculum-container h2{
+        text-align: center;
+        font-size: 23px;
+    }
+    .curriculum-container h4{
+        font-size: 19px;
+    }
+    .p-large{
+        display: block;
+        font-size: 8rem;
+    }
+    .experience {
+        text-align: left;
+        padding: 20px;
+    }
+
+    .timeline {
+        width: 5px;
+    }
+}

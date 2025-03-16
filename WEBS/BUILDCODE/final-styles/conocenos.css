@@ -1,0 +1,453 @@
+
+#Cabecera1{
+    background-color: var(--azulOscuro);
+    height: 35px;
+    display:flex;
+    font-size: 15px;
+
+}
+.lista1 {
+    display: flex; 
+    align-items: center; 
+    gap: 100px; 
+    text-align: center;
+    list-style-type: none;
+    color:white;
+    padding:0px;
+    margin:0;
+    flex-wrap: wrap;
+}
+
+#Cabecera1 a {
+    text-decoration: none;
+    color: var(--verde);
+  
+}
+#Cabecera2{
+    border-bottom: solid;
+    border-width:1px;
+    border-color: var(--grisTransparente);
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    
+}
+#Cabecera2 a{
+    text-decoration: none; 
+    color:var(--azulOscuro);
+    font-size: 20px;
+}
+.lista2{
+    display: flex; 
+    list-style-type: none;
+    align-items: center; 
+    gap: 100px;
+    padding:0px;
+    margin:0;
+    flex-wrap: wrap;
+    text-align: center;
+    padding:30px;
+}
+
+#videos{
+    justify-content: center;
+}
+
+.video{
+    align-items: center; 
+    justify-content: center;
+    margin:auto;
+    display:flex;
+    position:relative;
+    width:90vw;
+    height: 50vh;  
+    max-width:2000px;
+    align-items: center; 
+    justify-content: center;
+    margin-top: 60px;
+    overflow: hidden;   
+
+}
+
+video{
+    border-radius:10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity:80%;
+    -webkit-filter: brightness(40%);
+    filter: brightness(30%) sepia(1) hue-rotate(230deg) saturate(4) contrast(110%);/*hue rotate para el color, saturate el saturado y sepia filtro y el brillo bajo*/
+    
+    
+   
+}
+
+.video .texto{
+    position:absolute; /*cambiar la position */
+    color:white;
+    font-size: 25px;
+    margin:auto;
+    left:2%;
+    top:5%;
+
+    /* top: 50%;
+    left: 50%;    
+    transform: translate(-50%,-50%); */
+}
+
+
+.video .borde, .video .borde:hover{
+    margin:0px;
+    padding: 10px 40px;
+    font-size: 20px;
+    width: auto;
+    height: auto;
+}
+
+
+/* Integrantes del grupo  */
+#grupo{
+    text-align: center;
+    width: 90vw;
+    border-radius: 10px;
+    box-shadow: 5px -5px 10px var(--grisTransparente), -5px 5px 10px var(--grisTransparente);
+    padding: 10px;
+    margin: 20px 0px;
+    color: var(--grisTransparente);
+}
+#grupo h1{
+    color: var(--verde);
+    margin-bottom: 0px;
+    font-size: 30px;
+}
+
+.miembrosGrid {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 6px;
+}
+
+.miembro{
+    padding: 20px;
+    margin: 0 0 10px 0;
+    background-color: var(--grisTransparente);
+
+    max-width: 600px;
+    min-width: 200px;
+
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--azulOscuro);
+}
+
+
+/* HISTORIA  */
+ .punto h2{
+    color:var(--azul); 
+    
+ }
+
+
+ .contenido img{
+    width:150px;
+    height:150px;
+    object-fit: fill;
+    padding: 0;
+    border-radius: 50%;
+    border: 10px solid rgb(211, 211, 211);
+    transition: all 0.3s ease-in-out;
+    
+ }
+ .contenido img:hover{
+    transform:scale(1.1);
+    opacity: 1;
+    box-shadow: 3px 3px 3px var(--verde);;
+ }
+ hr {
+    margin-bottom: -39px;
+}
+
+.historia{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.historiaDiv{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20%,1fr));
+    justify-items: center;
+    text-align: center;
+}
+
+.historia h1{
+    color:  var(--azul);
+    border-bottom: solid;
+    border-width: 2px;
+}
+
+.punto{
+    display: flex;
+    flex-direction: column;
+}
+
+.contenido{
+    align-items: center;
+}
+.contenido p{
+    padding:10px;
+    background-color:var(--azul);
+    margin: 10px;
+    color:white;
+    border-radius:10px;
+    height: 80px;
+ }
+
+ .contenido p:hover{
+    font-size: 18px;
+    color: var(--verde);
+    transition: color 0.3s, font-size 0.3s;
+ }
+ /*tarjetas*/
+ .tarjeta {
+    position: relative;
+    top: 0;
+    margin-bottom: 100px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    width: 150px;
+    height: 150px;
+}
+.tarjeta img{
+    width: 150px;
+    height: 150px;
+}
+.tarjeta:hover > .frente{
+    transform: rotateY(-180deg) ;
+}
+
+.tarjeta:hover > .atras {
+    transform: rotateY(0deg);
+}
+.frente, .atras{
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.card{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    display: grid;
+    place-items: center;
+    border-left: rgb(255,255,255,0.342) 1px solid;
+    border-top: rgb(255,255,255,0.342) 1px solid;
+    border: none;/*para quitar linea */
+    border-radius: 50%;
+    backdrop-filter: blur(30px);
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 0px 20px;
+    color:white;
+    backface-visibility: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+    transition: 1s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.frente{
+    background-color: rgb(255, 255, 255);
+    transform: rotateY(0deg);
+    padding: 10px;
+}
+.atras{
+    transform: rotateY(180deg);
+    background-color: var(--azul);
+    padding: 10px;
+}
+/*CONTACTOOOOO*/
+
+#contacto h1{
+    /* background: linear-gradient(to bottom, #005194, rgba(255, 255, 255, 0) ); */
+    color: var(--verde);
+    width: 100%;
+    padding: 4vh 0px 0 0;
+    text-align: center;
+    
+    margin: auto;
+    font-size: 2rem;
+}
+
+#contacto h3{
+    color: white;
+    width:  60vw;
+    padding: 0 0 35px 0;
+    text-align: center;
+    margin: auto;
+}
+
+#contacto{
+    width: 100%;
+    height: fit-content;
+    justify-items: center;
+    padding: 5px;
+
+
+    background-image: url("../resources/banner.jpg");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat:no-repeat;
+}
+
+#contactUs{
+    background-color: var(--grisTransparente);
+    box-shadow: 0 0 20px var(--azulOscuro);
+    color:black;
+    font-weight: bold;
+    border-radius: 20px;
+    width: 60vw;
+    max-width: 600px;
+    
+    display: grid;
+
+    grid-template-columns: 1fr 3fr;
+    margin: 10px 20px 10% 20px;
+    padding: 20px;
+
+    align-items:flex-start;
+    
+}
+
+
+#contactUs label{
+    text-align: end;
+    font-size: 0.95rem;
+    margin: 10px 20px 10px 0px;
+}
+
+#contactUs input[type="text"], 
+    #contactUs input[type="tel"], 
+        #contactUs input[type="email"], 
+            #contactUs textarea{
+    margin: 5px 0px 5px 0px;
+    width: 90%;
+    border-radius: 10px;
+    border: none;
+}
+
+.botonera{
+    display: flex;
+    justify-items: space-around;
+}
+
+/* Validación del formulario */
+
+.escritura{
+    color: var(--azul);
+    text-align: justify;
+}
+.error { 
+    color: red; 
+    font-size: 0.9em; 
+    
+} 
+.success { 
+    color: var(--verde); 
+}
+#resultado {
+    text-align: center;
+} 
+
+@media (max-width:600px){
+
+    .miembrosGrid {
+        grid-template-areas: "t1" "t2" "t3"
+    }
+
+    .historia{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .historiaDiv{
+        /* display: grid; */
+        margin-left: 10vw;
+        column-gap: 10vw;
+        grid-template-areas: 
+        "t1 t2"
+        "t3 t4"
+        "t5 t5"
+        ;
+
+    }
+
+    .t1{
+        grid-area: t1;
+       
+    }
+    .t2{
+        grid-area: t2; margin-left: 20vw ;
+    }
+    .t3{
+        grid-area: t3;
+    }
+    .t5{
+        grid-area: t5; margin-left: 10vw ;
+    }
+    .t4{
+        grid-area: t4; margin-left: 20vw ;
+    }
+    #contacto h3{
+        font-size: 4dvw;
+        width: 80vw;
+    }
+
+
+}
+
+/* modificar para tamaño medio para que las tarjetas no se junten 
+diamasiado y quizas alguna cosa más*/
+@media (min-width:601px) and (max-width:1032px) {
+    .historia{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .miembrosGrid{
+        grid-template-areas: "t1 t2" "t3 t3";
+    }
+
+    .historiaDiv{
+        display: grid;
+        column-gap: 20vw;
+        grid-template-areas: 
+        "t1 t2"
+        "t3 t4"
+        "t5 t5"
+        ;
+
+    }
+
+    .t1{
+        grid-area: t1;
+    }
+    .t2{
+        grid-area: t2;
+    }
+    .t3{
+        grid-area: t3;
+    }
+    .t5{
+        grid-area: t5;
+    }
+    .t4{
+        grid-area: t4;
+    }
+}

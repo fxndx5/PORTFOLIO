@@ -363,10 +363,11 @@
         width: 230px;
         height: 230px;
     }
-    #circulo1 {top: -12%;animation: float 6s ease-in-out infinite;}
-    #circulo2 {top: 50%;animation:float 4s ease-in-out infinite; }
+    #circulo1 {top: -12%;animation: float 8s ease-in-out infinite;}
+    #circulo2 {top: 50%;animation:float 7s ease-in-out infinite; }
     #circulo3 {top: 50%;animation:float 2s ease-in-out infinite; }
-    #circulo0, #circulo4, #circulo5, #circulo6, #circulo7, #circulo8{animation:float 3s ease-in-out infinite;}
+    #circulo0, #circulo4,#circulo7, #circulo8{animation:float 3s ease-in-out infinite;}
+    #circulo5, #circulo6{animation:float 1s ease-in-out infinite;}
     @keyframes float {
         0% {
             transform: translateY(0);
@@ -497,10 +498,11 @@
         width: 230px;
         height: 230px;
     }
-    #circulo1 {top: -12%;animation: float 3s ease-in-out infinite;}
-    #circulo2 {top: 50%;animation:float 3s ease-in-out infinite; }
-    #circulo3 {top: 50%;animation:float 3s ease-in-out infinite; }
-    #circulo0, #circulo4, #circulo5, #circulo6, #circulo7, #circulo8{animation:float 3s ease-in-out infinite;}
+    #circulo1 {top: -12%;animation: float 8s ease-in-out infinite;}
+    #circulo2 {top: 50%;animation:float 7s ease-in-out infinite; }
+    #circulo3 {top: 50%;animation:float 2s ease-in-out infinite; }
+    #circulo0, #circulo4,#circulo7, #circulo8{animation:float 3s ease-in-out infinite;}
+    #circulo5, #circulo6{animation:float 1s ease-in-out infinite;}
     @keyframes float {
         0% {
             transform: translateY(0);
@@ -642,10 +644,11 @@
         width: 230px;
         height: 230px;
     }
-    #circulo1{top: -12%;animation: float 3s ease-in-out infinite;}
-    #circulo2 {top: 50%;animation:float 3s ease-in-out infinite; }
-    #circulo3 {top: 50%;animation:float 3s ease-in-out infinite; }
-    #circulo0, #circulo4, #circulo5, #circulo6, #circulo7, #circulo8{animation:float 3s ease-in-out infinite;}
+    #circulo1 {top: -12%;animation: float 8s ease-in-out infinite;}
+    #circulo2 {top: 50%;animation:float 7s ease-in-out infinite; }
+    #circulo3 {top: 50%;animation:float 2s ease-in-out infinite; }
+    #circulo0, #circulo4,#circulo7, #circulo8{animation:float 3s ease-in-out infinite;}
+    #circulo5, #circulo6{animation:float 1s ease-in-out infinite;}
     @keyframes float {
         0% {
             transform: translateY(0);

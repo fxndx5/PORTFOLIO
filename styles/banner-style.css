@@ -90,18 +90,29 @@
 
 
 /*-----------------RESPONSIVE------------------- */
-@media (min-width: 768px) {
+@media (min-width: 550px) and (max-width: 767px) {
+    .banner h1 {
+        font-size: 54px;
+        animation: typing 4s steps(30, end) infinite, slideIn 2s forwards;
+        display: inline-block;
+        max-width: 90%;
+        text-align: center;
+        margin-top: -1px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px)  {
     .banner {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
     .banner h1 {
-        font-size: 3.5rem;
+        font-size: 64px;
         animation: typing 4s steps(30, end) infinite, slideIn 2s forwards;
-        display: inline-block; 
-        max-width: 56%;
-        text-align: center; 
+        display: inline-block;
+        max-width: 77%;
+        text-align: center;
+        margin-top: -14px;
     }
     
     /* Botones */
@@ -117,5 +128,15 @@
         border: none;
         cursor: pointer;
         transition: 0.3s;
+    }
+}
+@media (min-width: 1025px){
+    .banner h1 {
+        font-size: 71px;
+        animation: typing 4s steps(30, end) infinite, slideIn 2s forwards;
+        display: inline-block;
+        max-width: 68%;
+        text-align: center;
+        margin-top: -14px;
     }
 }

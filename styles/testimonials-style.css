@@ -83,18 +83,17 @@
 
 /*--------------RESPONSIVE-------------------- */
 @media screen and (min-width: 1024px) {
-    .scroll-container {
+    .testimonials{
+        height: 100vh;
         flex-direction: row;
-        gap: 30px;
-        overflow-x: auto;
-        scroll-behavior: smooth;
-        white-space: nowrap;
-        padding: 20px;
-        width: 80%;
+        
     }
-
-    .scroll-container::-webkit-scrollbar {
-        display: none; /* Ocultar scrollbar */
+    .card-test{
+        transition: transform 0.3s ease; 
     }
+    .card-test:hover {
+        transform: scale(1.1);
+    }
+    
 
 }

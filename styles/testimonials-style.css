@@ -10,14 +10,13 @@
     font-size: 3rem;
     font-weight: bold;
     text-shadow: 1px 1px 30px rgba(255, 0, 157, 0.932) ;
-    /* color: #bc5090; */
     text-align: left;
     margin-bottom: 20px;
     margin-left: 10px;
-    animation: zoomIn 5s ease-in-out infinite;
+    /* animation: zoomIn 5s ease-in-out infinite; */
     opacity: 1;
 }
-@keyframes zoomIn {
+/* @keyframes zoomIn {
     from {
         transform: scale(0.5);
         opacity: 0;
@@ -26,7 +25,7 @@
         transform: scale(1.2);
         opacity: 1;
     }
-}
+} */
 .card-test {
     background-color: #ffffff4f;
     border-radius: 15px;

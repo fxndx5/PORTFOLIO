@@ -81,9 +81,15 @@
 }
 
 /*--------------RESPONSIVE-------------------- */
-@media screen and (min-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .testimonials{
-        height: 100vh;
+        flex-direction: column;
+        
+    }
+    
+}
+@media (min-width: 1025px)  {
+    .testimonials{
         flex-direction: row;
         
     }

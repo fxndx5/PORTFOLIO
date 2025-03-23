@@ -126,8 +126,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const bannerImg = document.getElementById('banner-img');
 
-const normalImage = 'sources/emoji2.PNG';
-const hoverImage = 'sources/emoji3.PNG'; 
+const normalImage = 'sources/emoji2.png';
+const hoverImage = 'sources/emoji3.png'; 
 
 
 bannerImg.addEventListener('mouseover', function() {

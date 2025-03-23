@@ -122,8 +122,8 @@
 .tecnicas {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    margin:20px 12px;
+    gap: 13px;
+    margin:20px 41px;
     justify-content: center; /* Centrado en móviles */
 }
 

@@ -126,8 +126,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const bannerImg = document.getElementById('banner-img');
 
-const normalImage = 'sources/emoji2.png';
-const hoverImage = 'sources/emoji3.png'; 
+const normalImage = 'sources/emoji2.PNG';
+const hoverImage = 'sources/emoji3.PNG'; 
 
 
 bannerImg.addEventListener('mouseover', function() {
@@ -138,33 +138,19 @@ bannerImg.addEventListener('mouseout', function() {
     bannerImg.src = normalImage;
 });
 //efecto cambiar color en CV de  YEARS y EXPERIENCE
-document.querySelector(".experience").addEventListener("mouseenter", function() {
-  document.querySelector(".years p").style.color = "#a6fa95";
-});
+document.querySelectorAll(".curriculum-container").forEach(container => {
+  let experience = container.querySelector(".experience");
+  let yearsText = container.querySelector(".years p");
 
-document.querySelector(".experience").addEventListener("mouseleave", function() {
-  document.querySelector(".years p").style.color = "";
-});
-document.querySelector(".experience1").addEventListener("mouseenter", function() {
-  document.querySelector(".years1 p").style.color = "#f584f5";
-});
+  if (experience && yearsText) {
+    experience.addEventListener("mouseenter", function() {
+      yearsText.style.color = "#333";
+    });
 
-document.querySelector(".experience1").addEventListener("mouseleave", function() {
-  document.querySelector(".years1 p").style.color = "";
-});
-document.querySelector(".experience2").addEventListener("mouseenter", function() {
-  document.querySelector(".years2 p").style.color = "#f6fa8d";
-});
-
-document.querySelector(".experience2").addEventListener("mouseleave", function() {
-  document.querySelector(".years2 p").style.color = "";
-});
-document.querySelector(".experience3").addEventListener("mouseenter", function() {
-  document.querySelector(".years3 p").style.color = "#f8bb70";
-});
-
-document.querySelector(".experience3").addEventListener("mouseleave", function() {
-  document.querySelector(".years3 p").style.color = "";
+    experience.addEventListener("mouseleave", function() {
+      yearsText.style.color = "";
+    });
+  }
 });
 
 
@@ -177,7 +163,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Posiciona los círculos fuera de la pantalla inicialmente
   circles.forEach((circle, index) => {
-      let direction = index % 2 === 0 ? -200 : 200; // Alternar salida
+      let direction = index % 2 === 0 ? -200 : 200;
       circle.style.transform = `translateX(${direction}%)`;
       circle.style.opacity = "0";
   });
@@ -234,7 +220,7 @@ document.addEventListener("DOMContentLoaded", function () {
           }
       });
 
-      // Si el clic fue fuera de cualquier .card, cerrar todos los párrafos
+      // Si el clic fue fuera cualquier .card, cerrar todos los párrafos
       if (!clickedInsideCard) {
           closeAllParagraphs();
       }

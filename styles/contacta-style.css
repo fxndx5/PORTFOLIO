@@ -1,6 +1,6 @@
 /*--------------------CONTACTA--------------------------- */
 #contacto img{
-    animation: slideIn 5s ease-out infinite ;
+    animation: slideIn 5s ease-out forwards ;
 }
 @keyframes slideIn {
     from {
